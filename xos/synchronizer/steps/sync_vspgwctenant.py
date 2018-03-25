@@ -28,8 +28,8 @@ logger = Logger(level=logging.INFO)
 
 class SyncVSPGWCTenant(SyncInstanceUsingAnsible):
 
-    provides = [SyncVSPGWCTenant]
-    observes = SyncVSPGWCTenant
+    provides = [VSPGWCTenant]
+    observes = VSPGWCTenant
     requested_interval = 0
 
     template_name = "vspgwctenant_playbook.yaml"
